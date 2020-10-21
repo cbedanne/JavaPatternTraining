@@ -2,32 +2,33 @@ package Model;
 
 public class Rectangle extends Shape {
 
-    private Double height;
-    private Double width;
+    private double height;
+    private double width;
 
-    public Rectangle(Double height,Double width) {
+    public Rectangle(double height, double width, String color) {
         this.height=height;
         this.width=width;
+        this.setColor(color);
     }
 
-    public void setHeight(Double height) {
+    public void setHeight(double height) {
         this.height = height;
     }
 
-    public void setWidth(Double width) {
+    public void setWidth(double width) {
         this.width = width;
     }
 
-    public Double getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    public Double getWidth() {
+    public double getWidth() {
         return width;
     }
 
     @Override
-    public Double area(){
+    public double area(){
         return height*width;
     }
 

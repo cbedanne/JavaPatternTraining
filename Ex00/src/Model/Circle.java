@@ -2,22 +2,23 @@ package Model;
 
 public class Circle extends Shape {
 
-    private Double radius;
+    private double radius;
 
-    public Circle (Double radius) {
+    public Circle(double radius, String color) {
         this.radius=radius;
+        this.setColor(color);
     }
 
     @Override
-    Double area() {
+    double area() {
         return Math.PI*radius*radius;
     }
 
-    public Double getRadius() {
+    public double getRadius() {
         return radius;
     }
 
-    public void setRadius(Double radius) {
+    public void setRadius(double radius) {
         this.radius = radius;
     }
 
