@@ -4,9 +4,13 @@ public class Circle extends Shape {
 
     private Double radius;
 
+    public Circle (Double radius) {
+        this.radius=radius;
+    }
+
     @Override
     Double area() {
-        return 3.14*radius*radius;
+        return Math.PI*radius*radius;
     }
 
     public Double getRadius() {
