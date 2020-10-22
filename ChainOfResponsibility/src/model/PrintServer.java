@@ -10,7 +10,7 @@ public class PrintServer extends Node {
     }
 
     public void print(String message) {
-        System.out.println("From printer " + this.getAddress()+  "Printing : " );
+        System.out.println("From printer " + this.getAddress()+  "  Printing : " );
         this.printerType.print(message);
     }
 
@@ -21,7 +21,7 @@ public class PrintServer extends Node {
         }
         else
         {
-            this.getNextComponent().receive(packet);
+           send(packet);
         }
     }
 
