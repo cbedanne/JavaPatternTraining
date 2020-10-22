@@ -16,7 +16,7 @@ public class PrintServer extends Node {
 
     @Override
     public void receive(Packet packet) {
-        if (this.getAddress()==packet.getDestinationAdress()) {
+        if (this.getAddress().equals(packet.getDestinationAdress())) {
             print(packet.getContents());
         }
         else

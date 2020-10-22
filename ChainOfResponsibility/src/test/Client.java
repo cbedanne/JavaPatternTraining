@@ -18,6 +18,7 @@ public class Client {
         ps1.setNextComponent(n2);
         n2.setNextComponent(ps2);
         ps2.setNextComponent(ps3);
+        ps3.setNextComponent(ws);
 
         ((WorkStation) ws).originate(new Packet("A3","Message"));
         ((WorkStation) ws).originate(new Packet("A5","Other Message"));
