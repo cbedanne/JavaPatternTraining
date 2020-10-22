@@ -23,6 +23,7 @@ public class Client {
         ((WorkStation) ws).originate(new Packet("A3","Message"));
         ((WorkStation) ws).originate(new Packet("A5","Other Message"));
         ((WorkStation) ws).originate(new Packet("A6","Still another Message"));
+        ((WorkStation) ws).originate(new Packet("A2","No destination message"));
 
     }
 
