@@ -7,7 +7,7 @@ public class Packet {
 
     public Packet(String destination, String content ) {
         this.destinationAddress=destination;
-        this.contents = "Message";
+        this.contents = content;
     }
 
     public String getDestinationAdress() {
