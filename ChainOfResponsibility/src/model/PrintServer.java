@@ -2,12 +2,16 @@ package model;
 
 public class PrintServer extends Node {
 
-    public PrintServer(String address) {
+    private PrinterStrategy printerType;
+
+    public PrintServer(String address, PrinterStrategy printerType) {
         super(address);
+        this.printerType=printerType;
     }
 
     public void print(String message) {
-        System.out.println("Printing : " + message + " from printerServer " + this.getAddress());
+        System.out.println("From printer " + this.getAddress()+  "Printing : " );
+        this.printerType.print(message);
     }
 
     @Override
