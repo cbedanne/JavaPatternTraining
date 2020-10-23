@@ -2,14 +2,11 @@ package model;
 
 public class Printer3D implements PrinterStrategy {
 
-    private final String name;
-
-    public Printer3D(String name) {
-        this.name=name;
+    public Printer3D() {
     }
 
     @Override
     public void print(String content) {
-        System.out.println(" " + content + " from " + name );
+        System.out.println(" " + content + " from " + this.getClass().getSimpleName() );
     }
 }

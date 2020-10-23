@@ -9,11 +9,11 @@ public class Client {
         LanComponent ws=new WorkStation("A1");
         LanComponent n1=new Node("A2");
         LanComponent mq1=new MQServer("A8");
-        LanComponent ps1=new PrintServer("A3", new InkjetPrinter("Inkjet"));
+        LanComponent ps1=new PrintServer("A3", new InkjetPrinter());
         LanComponent fs2=new FileServer("A9");
         LanComponent n2=new Node("A4");
-        LanComponent ps2=new PrintServer("A5",new LaserPrinter("Laser"));
-        LanComponent ps3=new PrintServer("A6",new Printer3D("3D"));
+        LanComponent ps2=new PrintServer("A5",new LaserPrinter());
+        LanComponent ps3=new PrintServer("A6",new Printer3D());
         LanComponent fs1=new FileServer("A7");
 
         ws.setNextComponent(n1);
