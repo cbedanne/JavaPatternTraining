@@ -1,6 +1,6 @@
 package model;
 
-public class FileServer extends Node {
+public class FileServer extends PacketHandler {
 
     public FileServer(String address) {
         super(address);

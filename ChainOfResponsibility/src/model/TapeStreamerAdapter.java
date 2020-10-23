@@ -1,6 +1,6 @@
 package model;
 
-public class TapeStreamerAdapter extends Node implements PacketHandlerToTapeStreamerAdapter {
+public class TapeStreamerAdapter extends PacketHandler implements PacketHandlerToTapeStreamerAdapter {
 
 
     private TapeStreamer adaptee;

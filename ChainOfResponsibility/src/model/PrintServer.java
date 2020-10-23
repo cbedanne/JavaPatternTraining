@@ -1,6 +1,6 @@
 package model;
 
-public class PrintServer extends Node {
+public class PrintServer extends PacketHandler {
 
     private PrinterStrategy printerType;
 

@@ -15,5 +15,10 @@ public abstract class PacketHandler extends LanComponent{
         }
     }
 
+    @Override
+    public void send(Packet packet) {
+        this.getNextComponent().receive(packet);
+    }
+
     public abstract void handle (Packet packet);
 }

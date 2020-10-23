@@ -1,6 +1,6 @@
 package model;
 
-public class MQServer extends Node {
+public class MQServer extends PacketHandler {
 
     public MQServer(String address) {
         super(address);
