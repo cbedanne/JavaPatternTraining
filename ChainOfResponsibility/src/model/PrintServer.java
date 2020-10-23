@@ -9,21 +9,9 @@ public class PrintServer extends Node {
         this.printerType=printerType;
     }
 
-    public void print(String message) {
-        System.out.println("From printer " + this.getAddress()+  "  Printing : " );
-        this.printerType.print(message);
-    }
-
     @Override
-    public void receive(Packet packet) {
-        if (this.getAddress().equals(packet.getDestinationAdress())) {
-            print(packet.getContents());
-        }
-        else
-        {
-           send(packet);
-        }
+    public void handle(Packet packet) {
+        System.out.println("From printer " + this.getAddress()+  "  Printing : " );
+        this.printerType.print(packet.getContents());
     }
-
-
 }
